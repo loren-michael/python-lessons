@@ -3,9 +3,9 @@ import random
 from enum import Enum
 
 class RPS(Enum):
-      ROCK = 1
-      PAPER = 2
-      SCISSORS =3
+    ROCK = 1
+    PAPER = 2
+    SCISSORS =3
 
 
 print("")
@@ -21,10 +21,8 @@ computerchoice = random.choice("123")
 computer = int(computerchoice)
 
 print("")
-
 print("You chose " + str(RPS(player)).replace('RPS.', ''))
 print("Python chose " + str(RPS(computer)).replace('RPS.', ''))
-
 print("")
 
 if player == 1 and computer == 3:
